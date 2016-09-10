@@ -11,7 +11,9 @@ const Option = Select.Option;
 
 let children = [];
 for (let i = 10; i < 36; i++) {
-  children.push(<Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>);
+  for (let j=1; j<5; j++){
+  children.push(<Option key={i.toString(36) + j}>{i.toString(36) + j}</Option>);
+  }
 }
 
 function handleChange(value) {
